@@ -23,7 +23,8 @@ const bookSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  author: authorSchema, // aqui estamos usando o schema que criamos para o autor
+  author: {type: mongoose.Schema.Types.ObjectId, ref: 'author', required: true},
+  // author: authorSchema, // aqui estamos usando o schema que criamos para o autor
   // createdAt: {
   //   type: Date,
   //   default: Date.now,
