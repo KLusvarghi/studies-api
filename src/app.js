@@ -1,5 +1,4 @@
 import express from 'express'
-import { getBook } from './func/getBook.js'
 import connectToDatabase from './config/dbConnect.js'
 import routes from './routes/index.js'
 
@@ -25,5 +24,3 @@ routes(app) // fazendo isso pq a função "routes" precisa do "app"
 
 
 export default app
-
-
