@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import {authorSchema} from './Author.js'
+import { authorSchema } from './Author.js'
 
 // criando schema
 // o schema é o modelo que vai definir como vai ser a estrutura e as propriedades de um livro neste caso (nosso banco de dados)
@@ -23,7 +23,7 @@ const bookSchema = new mongoose.Schema({
     type: Number,
     required: true,
   },
-  author: {type: mongoose.Schema.Types.ObjectId, ref: 'author', required: true},
+  author: { type: mongoose.Schema.Types.ObjectId, ref: 'author', required: true },
   // author: authorSchema, // aqui estamos usando o schema que criamos para o autor
   // createdAt: {
   //   type: Date,
